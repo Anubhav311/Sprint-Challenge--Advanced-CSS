@@ -170,18 +170,6 @@ p {
   align-items: center;
   background-color: #F6F6F6;
   border-bottom: 2px solid #F1F1F1;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: auto;
-  width: 950px;
-  opacity: 0.95;
-}
-@media (max-width: 500px) {
-  .top-content {
-    width: 450px;
-  }
 }
 h1 {
   font-size: 4.5rem;
@@ -228,7 +216,6 @@ footer {
 .main-img {
   width: 100%;
   border-radius: 5px;
-  margin-top: 110px;
 }
 .main-img:hover {
   transform: rotate(30deg);
@@ -359,4 +346,18 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.spacex-img {
+  width: 800px;
+  margin: 30px 0;
+}
+.spacex-img .spacex-logo {
+  width: 100%;
+}
+.mid-content {
+  text-align: center;
+  margin-top: 60px;
+}
+.mid-content h1 {
+  font-size: 6rem;
 }
