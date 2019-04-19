@@ -1,1 +1,47 @@
 // Navigation code here
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+
+    // overflow: hidden;
+    // position: fixed;
+    // top: 0; 
+    // width: 100%; 
+    // z-index: auto;
+    // width: 950px;
+    // opacity: 0.95;
+
+    // @media @phone {
+    //     width: 450px;
+    // }
+}
+
+h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin: 15px auto;
+}
+
+nav {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 450px;
+    display: flex; 
+    justify-content: space-around;
+    margin: 10px auto;
+
+    @media @phone {
+        width: 400px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: @river-bend;
+    font-weight: bold;
+    
+}

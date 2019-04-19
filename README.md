@@ -34,15 +34,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive: adaptive websites are designed for some specific screen sizes or devices. Adaptive websites don’t have fluidity in their design and use fixed layouts for certain screen sizes. Relevant layout just kick in when website is opened in respective device.
+Responsive: responsive websites have fluidity and are made for all screen sizes or devices. Responsive websites use percentages and media queries to make them fit for all devices.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first and desktop first are two approaches for designing responsive websites. In mobile first we design websites for mobile screens and then scale their design up for devices with bigger screens like tablets and desktops/laptops. We use “min-width” as the condition for media queries to trigger in. 
+In desktop first approach, we design websites for desktops and then scale them down to devices with smaller screen sizes like tablet and mobile. We use “max-width” as the condition for media queries to trigger in.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+By giving `font-size: 62.5%` to `html` tag we can use rems in round numbers which makes the process easier. 
+One `rem` unit is equal to the computed value of root element. Which means it’s equal to the font-size of `html` element and for most browsers that font-size is `16px`. Because of this developers have to deal with values in fractions. Say if you want to give 10px size to your font, the value will be 0.625rem, for 20px it’s 1.25rem, and so on. 
+So, in order to overcome this oddness of values we can use this trick. Set the  `html` font-size to `62.5%` of its default size given by the browser (mostly 16px). That means font-size of html is now 10px, and 1rem is equal to 10px, 2rem is equal to 20px, and so on. Now we don’t have to work with fractions.
+
 4. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing is a program for writing CSS code. It has its own syntax which is pretty much like CSS but it has some extra features that make it easier than writing CSS directly.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+
+Favorite: nesting is my favorite concept in preprocessing because it makes it easier to visualize the cascading and the specificity. 
+Troublesome: parametric mixins give me most trouble relatively. The way we need to pass parameters and arguments is little tricky.
+
 
 ## Project Set Up
 
